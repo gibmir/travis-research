@@ -1,0 +1,9 @@
+language: java
+jdk:
+  - openjdk11
+# >- to removing the ending new line
+script: >-
+  mvn clean install -DskipTests=true -Dmaven.javadoc.skip=true -B -V &&
+  mvn test
+
+
